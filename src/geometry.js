@@ -6,7 +6,7 @@
     if (typeof define === 'function' && define.amd) {
 
         // AMD.
-        define('g', [], factory);
+        define([], factory);
 
     } else if (typeof exports === 'object') {
 
@@ -19,7 +19,6 @@
 
         // Browser globals.
         root.g = factory();
-
     }
 
 }(this, function() {
